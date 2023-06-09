@@ -1,0 +1,31 @@
+<html>
+  <head> </head>
+  <body>
+    {% for page in pages %}
+    <div class="page">
+      <h1>{{ page.name }}</h1>
+      {% for column in page.columns %}
+      <div class="column">
+        {% for category in column.categories %}
+        <div class="category">
+          <h2>{{ category.name }}</h2>
+          {% for row in category.rows %}
+          {% if row == "Separator" %}
+          <hr />
+          {% else %}
+          {% set link = row %}
+          <div class="link">
+            {{ row.Link.ico }}
+            {{ row.Link.lbl }}
+            {{ row.Link.url | safe }}
+          </div>
+          {% endif %}
+          {% endfor %}
+        </div>
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </body>
+</html>
