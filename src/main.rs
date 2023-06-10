@@ -40,8 +40,8 @@ struct Startpage {
 //  <name, filename>
 type Navigation = HashMap<String, String>;
 
-static OUT_DIR: &str = "../docs";
-static CONFIGURATION: &str = "../startpages.yaml";
+static OUT_DIR: &str = "docs";
+static CONFIGURATION: &str = "content/startpages.yaml";
 
 lazy_static! {
     pub static ref TEMPLATES: Tera = {
