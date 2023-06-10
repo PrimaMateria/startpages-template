@@ -1,6 +1,7 @@
 #[macro_use]
 extern crate lazy_static;
 
+use fs_extra::dir::{copy, CopyOptions};
 use rsass::{compile_scss_path, output};
 use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
@@ -58,14 +59,15 @@ lazy_static! {
 }
 
 /// It parses YAML configuration into internal Rust structure.
-fn get_startpages() -> Vec<Startpage> {
-    let mut file = File::open(CONFIGURATION).expect("Failed to open file");
-    let mut contents = String::new();
-    file.read_to_string(&mut contents)
-        .expect("Failed to to read file");
+fn get_startpages() -> Result<Vec<Startpage>, Box<dyn std::error::Error>> {
+    let mut file = File::open(CONFIGURATION)?;
 
-    let startpages: Vec<Startpage> = serde_yaml::from_str(&contents).expect("Failed to parse YAML");
-    startpages
+    let mut contents = String::new();
+    file.read_to_string(&mut contents)?;
+
+    let startpages: Vec<Startpage> = serde_yaml::from_str(&contents)?;
+
+    Ok(startpages)
 }
 
 /// It collects names of startpages and returns a map to their file paths.
@@ -83,55 +85,86 @@ fn get_navigation(startpages: &Vec<Startpage>) -> Navigation {
 }
 
 /// Recreates output directory.
-fn prepare_out_dir() {
+fn prepare_out_dir() -> Result<(), Box<dyn std::error::Error>> {
     if fs::metadata(OUT_DIR).is_ok() {
-        fs::remove_dir_all(OUT_DIR).expect("Failed to delete docs directory");
+        fs::remove_dir_all(OUT_DIR)?;
     }
-    fs::create_dir(OUT_DIR).expect("Failed to create docs directory");
+    fs::create_dir(OUT_DIR)?;
+
+    Ok(())
 }
 
 /// For each startpage it generates a HTML file from Tera template.
 /// Each startpage contains navigation to other startpages
-fn generate_startpages(startpages: &Vec<Startpage>, navigation: &Navigation) {
+fn generate_startpages(
+    startpages: &Vec<Startpage>,
+    navigation: &Navigation,
+) -> Result<(), Box<dyn std::error::Error>> {
     for startpage in startpages {
         // Use tera to generate the startpage html code
         let mut context = tera::Context::new();
         context.insert("startpage", &startpage);
         context.insert("navigation", &navigation);
-        let html_code = TEMPLATES
-            .render("startpage.html", &context)
-            .expect("Failed to generate startpage from the template");
 
-        // Write generatesd html code to the file in the docs directory
-        let startpage_file_name = navigation.get(&startpage.name).unwrap();
+        let html_code = TEMPLATES.render("startpage.html", &context)?;
+
+        // Write generated html code to the file in the docs directory
+        let startpage_file_name = navigation
+            .get(&startpage.name)
+            .ok_or("Navigation doesn't contain startpage name")?;
+
         let startpage_file_path = format!("{}/{}", OUT_DIR, startpage_file_name);
-        let mut file = File::create(startpage_file_path).expect("Failed to create output file");
-        file.write_all(html_code.as_bytes())
-            .expect("Failed to write to output file");
+        let mut file = File::create(startpage_file_path)?;
+
+        file.write_all(html_code.as_bytes())?;
     }
+
+    Ok(())
 }
 
-fn compile_sass() {
+/// Compiles sass/styles.scss to docs/css/styles.css
+fn compile_sass() -> Result<(), Box<dyn std::error::Error>> {
     let css_dir = format!("{}/css", OUT_DIR);
-    fs::create_dir(&css_dir).expect("Failed to create css directory");
+    fs::create_dir(&css_dir)?;
 
     let path = "sass/styles.scss".as_ref();
     let format = output::Format {
         ..Default::default()
     };
-    let css = compile_scss_path(path, format).unwrap();
+    let css = compile_scss_path(path, format)?;
 
     let css_file_path = format!("{}/styles.css", css_dir);
-    let mut file = File::create(css_file_path).expect("Failed to create css file");
-    file.write_all(&css.as_slice())
-        .expect("Failed to write css file");
+    let mut file = File::create(css_file_path)?;
+
+    file.write_all(&css.as_slice())?;
+
+    Ok(())
+}
+
+/// Copies public dir to docs/public
+fn copy_public_dir() -> Result<(), Box<dyn std::error::Error>> {
+    let options = CopyOptions::new();
+    copy("public", OUT_DIR, &options)?;
+
+    Ok(())
 }
 
 fn main() {
-    let startpages = get_startpages();
-    let navigation = get_navigation(&startpages);
+    let startpages = get_startpages().expect("Failed to parse startpages content");
+    println!("Startpages content parsed");
 
-    prepare_out_dir();
-    generate_startpages(&startpages, &navigation);
-    compile_sass();
+    let navigation = get_navigation(&startpages);
+    println!("Navigation extracted from the content");
+
+    prepare_out_dir().expect("Failed to prepare output directory");
+    println!("Output directory prepared");
+
+    generate_startpages(&startpages, &navigation).expect("Failed to generate startpages");
+    println!("Startpages generated");
+
+    compile_sass().expect("Failed to compile Sass");
+    println!("Sass styles compiled");
+
+    copy_public_dir().expect("Failed to copy public directory");
+    println!("Public directory copied");
 }
