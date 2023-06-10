@@ -1,6 +1,7 @@
 #[macro_use]
 extern crate lazy_static;
 
+use rsass::{compile_scss_path, output};
 use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
 use std::fs;
@@ -110,10 +111,27 @@ fn generate_startpages(startpages: &Vec<Startpage>, navigation: &Navigation) {
     }
 }
 
+fn compile_sass() {
+    let css_dir = format!("{}/css", OUT_DIR);
+    fs::create_dir(&css_dir).expect("Failed to create css directory");
+
+    let path = "sass/styles.scss".as_ref();
+    let format = output::Format {
+        ..Default::default()
+    };
+    let css = compile_scss_path(path, format).unwrap();
+
+    let css_file_path = format!("{}/styles.css", css_dir);
+    let mut file = File::create(css_file_path).expect("Failed to create css file");
+    file.write_all(&css.as_slice())
+        .expect("Failed to write css file");
+}
+
 fn main() {
     let startpages = get_startpages();
     let navigation = get_navigation(&startpages);
 
     prepare_out_dir();
     generate_startpages(&startpages, &navigation);
+    compile_sass();
 }
