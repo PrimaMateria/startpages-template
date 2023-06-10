@@ -20,22 +20,34 @@
       href="public/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="public/favicon/site.webmanifest" />
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="page">
-      <h1>{{ startpage.name }}</h1>
       {% for column in startpage.columns %}
       <div class="column">
         {% for category in column.categories %}
         <div class="category">
           <h2>{{ category.name }}</h2>
-          {% for row in category.rows %} {% if row == "Separator" %}
-          <hr />
-          {% else %}
-          <div class="link">
-            {{ row.Link.ico }} {{ row.Link.lbl }} {{ row.Link.url | safe }}
+          <div class="rows">
+            {% for row in category.rows %} {% if row == "Separator" %}
+            <div class="separator"></div>
+            {% else %}
+            <div class="ico">{{ row.Link.ico | safe }}</div>
+            <div class="lbl">
+              <a href="{{ row.Link.url | safe }}">{{ row.Link.lbl }}</a>
+            </div>
+            {% endif %} {% endfor %}
           </div>
-          {% endif %} {% endfor %}
         </div>
         {% endfor %}
       </div>

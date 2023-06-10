@@ -4,20 +4,86 @@
         - name: First
           rows:
             - !Link
-              ico: icon1.png
+              ico: <i class="fa-solid fa-house"></i>
               lbl: Object 1
               url: http://example.com/object1
             - !Link
-              ico: icon1.png
+              ico: <i class="fa-solid fa-house"></i>
               lbl: Object 1
               url: http://example.com/object1
             - !Link
-              ico: icon1.png
+              ico: <i class="fa-solid fa-house"></i>
               lbl: Object 1
               url: http://example.com/object1
             - !Separator
             - !Link
-              ico: icon1.png
+              ico: <i class="fa-solid fa-house"></i>
+              lbl: Object 1
+              url: http://example.com/object1
+        - name: Second
+          rows:
+            - !Link
+              ico: <i class="fa-solid fa-house"></i>
+              lbl: Object 1
+              url: http://example.com/object1
+    - categories:
+        - name: Third
+          rows:
+            - !Link
+              ico: <i class="fa-solid fa-house"></i>
+              lbl: Object 1
+              url: http://example.com/object1
+            - !Link
+              ico: <i class="fa-solid fa-house"></i>
+              lbl: Object 1
+              url: http://example.com/object1
+            - !Link
+              ico: <i class="fa-solid fa-house"></i>
+              lbl: Object 1
+              url: http://example.com/object1
+            - !Separator
+            - !Link
+              ico: <i class="fa-solid fa-house"></i>
+              lbl: Object 1
+              url: http://example.com/object1
+    - categories:
+        - name: Fourth
+          rows:
+            - !Link
+              ico: <i class="fa-solid fa-house"></i>
+              lbl: Object 1
+              url: http://example.com/object1
+            - !Link
+              ico: <i class="fa-solid fa-house"></i>
+              lbl: Object 1
+              url: http://example.com/object1
+            - !Link
+              ico: <i class="fa-solid fa-house"></i>
+              lbl: Object 1
+              url: http://example.com/object1
+            - !Separator
+            - !Link
+              ico: <i class="fa-solid fa-house"></i>
+              lbl: Object 1
+              url: http://example.com/object1
+    - categories:
+        - name: Fifth
+          rows:
+            - !Link
+              ico: <i class="fa-solid fa-house"></i>
+              lbl: Object 1
+              url: http://example.com/object1
+            - !Link
+              ico: <i class="fa-solid fa-house"></i>
+              lbl: Object 1
+              url: http://example.com/object1
+            - !Link
+              ico: <i class="fa-solid fa-house"></i>
+              lbl: Object 1
+              url: http://example.com/object1
+            - !Separator
+            - !Link
+              ico: <i class="fa-solid fa-house"></i>
               lbl: Object 1
               url: http://example.com/object1
 - name: Work
@@ -26,19 +92,19 @@
         - name: First
           rows:
             - !Link
-              ico: icon1.png
+              ico: <i class="fa-solid fa-house"></i>
               lbl: Object 1
               url: http://example.com/object1
             - !Link
-              ico: icon1.png
+              ico: <i class="fa-solid fa-house"></i>
               lbl: Object 1
               url: http://example.com/object1
             - !Link
-              ico: icon1.png
+              ico: <i class="fa-solid fa-house"></i>
               lbl: Object 1
               url: http://example.com/object1
             - !Separator
             - !Link
-              ico: icon1.png
+              ico: <i class="fa-solid fa-house"></i>
               lbl: Object 1
               url: http://example.com/object1

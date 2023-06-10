@@ -1,3 +1,52 @@
-page {
-  display: grid;
+@import "colorschemes/base16-gruvbox-dark-medium.scss";
+@import "https://fonts.googleapis.com/css2?family=Roboto";
+
+html,
+body {
+  font-family: "Roboto";
+  background-color: $base00;
+  color: $base04;
+}
+
+a {
+  text-decoration: none;
+  color: $base04;
+}
+
+h2 {
+  color: $base0A;
+}
+
+.page {
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.category {
+  .rows {
+    display: grid;
+    grid-row-gap: 4px;
+    grid-template-columns: 30px auto;
+
+    .separator {
+      border-top: 1px solid $base02;
+      margin-top: 8px;
+      margin-bottom: 8px;
+      grid-column: 1 / span 2;
+    }
+  }
+}
+
+.navigation {
+  position: fixed;
+  bottom: 0;
+  padding: 8px;
+  width: 100%;
+  display: flex;
+  gap: 32px;
+  justify-content: center;
 }
