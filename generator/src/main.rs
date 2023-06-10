@@ -2,6 +2,7 @@
 extern crate lazy_static;
 
 use serde::{Deserialize, Serialize};
+use std::collections::HashMap;
 use std::fs;
 use std::fs::File;
 use std::io::Read;
@@ -35,6 +36,12 @@ struct Startpage {
     columns: Vec<Column>,
 }
 
+//  <name, filename>
+type Navigation = HashMap<String, String>;
+
+static OUT_DIR: &str = "../docs";
+static CONFIGURATION: &str = "../startpages.yaml";
+
 lazy_static! {
     pub static ref TEMPLATES: Tera = {
         let mut tera = match Tera::new("templates/**/*.html") {
@@ -49,9 +56,9 @@ lazy_static! {
     };
 }
 
+/// It parses YAML configuration into internal Rust structure.
 fn get_startpages() -> Vec<Startpage> {
-    // Parse the config file to Rust structure
-    let mut file = File::open("../startpages.yaml").expect("Failed to open file");
+    let mut file = File::open(CONFIGURATION).expect("Failed to open file");
     let mut contents = String::new();
     file.read_to_string(&mut contents)
         .expect("Failed to to read file");
@@ -60,29 +67,44 @@ fn get_startpages() -> Vec<Startpage> {
     startpages
 }
 
-fn generate_startpages(startpages: Vec<Startpage>) {
-    let out_dir = "../docs";
-
-    // Delete docs directory if it exists
-    if fs::metadata(out_dir).is_ok() {
-        fs::remove_dir_all(out_dir).expect("Failed to delete docs directory");
-    }
-
-    // Create docs directory
-    fs::create_dir(out_dir).expect("Failed to create docs directory");
+/// It collects names of startpages and returns a map to their file paths.
+fn get_navigation(startpages: &Vec<Startpage>) -> Navigation {
+    let mut navigation: Navigation = HashMap::new();
 
     for startpage in startpages {
-        let startpage_safe_name = startpage.name.to_lowercase().replace(" ", "_");
+        let startpage_name = startpage.name.to_owned();
+        let startpage_safe_name = startpage_name.to_lowercase().replace(" ", "_");
         let startpage_file_name = format!("{}.html", startpage_safe_name);
 
+        navigation.insert(startpage_name, startpage_file_name);
+    }
+    navigation
+}
+
+/// Recreates output directory.
+fn prepare_out_dir() {
+    if fs::metadata(OUT_DIR).is_ok() {
+        fs::remove_dir_all(OUT_DIR).expect("Failed to delete docs directory");
+    }
+    fs::create_dir(OUT_DIR).expect("Failed to create docs directory");
+}
+
+/// For each startpage it generates a HTML file from Tera template.
+/// Each startpage contains navigation to other startpages
+fn generate_startpages(startpages: &Vec<Startpage>, navigation: &Navigation) {
+    for startpage in startpages {
         // Use tera to generate the startpage html code
         let mut context = tera::Context::new();
         context.insert("startpage", &startpage);
-        let html_code = TEMPLATES.render("startpage.html", &context).unwrap();
+        context.insert("navigation", &navigation);
+        let html_code = TEMPLATES
+            .render("startpage.html", &context)
+            .expect("Failed to generate startpage from the template");
 
         // Write generatesd html code to the file in the docs directory
-        let startpage_filepath = format!("{}/{}", out_dir, startpage_file_name);
-        let mut file = File::create(startpage_filepath).expect("Failed to create output file");
+        let startpage_file_name = navigation.get(&startpage.name).unwrap();
+        let startpage_file_path = format!("{}/{}", OUT_DIR, startpage_file_name);
+        let mut file = File::create(startpage_file_path).expect("Failed to create output file");
         file.write_all(html_code.as_bytes())
             .expect("Failed to write to output file");
     }
@@ -90,5 +112,8 @@ fn generate_startpages(startpages: Vec<Startpage>) {
 
 fn main() {
     let startpages = get_startpages();
-    generate_startpages(startpages);
+    let navigation = get_navigation(&startpages);
+
+    prepare_out_dir();
+    generate_startpages(&startpages, &navigation);
 }

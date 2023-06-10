@@ -20,5 +20,10 @@
       </div>
       {% endfor %}
     </div>
+    <div class="navigation">
+      {% for startpage_name, startpage_filepath in navigation %}
+      <a href="{{ startpage_filepath | safe }}">{{ startpage_name }}</a>
+      {% endfor %}
+    </div>
   </body>
 </html>
