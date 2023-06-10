@@ -20,3 +20,25 @@
               ico: icon1.png
               lbl: Object 1
               url: http://example.com/object1
+- name: Work
+  columns:
+    - categories:
+        - name: First
+          rows:
+            - !Link
+              ico: icon1.png
+              lbl: Object 1
+              url: http://example.com/object1
+            - !Link
+              ico: icon1.png
+              lbl: Object 1
+              url: http://example.com/object1
+            - !Link
+              ico: icon1.png
+              lbl: Object 1
+              url: http://example.com/object1
+            - !Separator
+            - !Link
+              ico: icon1.png
+              lbl: Object 1
+              url: http://example.com/object1
