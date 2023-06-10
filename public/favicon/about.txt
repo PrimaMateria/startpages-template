@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: STIX Two Text
+- Font Author: Copyright 2001-2021 The STIX Fonts Project Authors (https://github.com/stipub/stixfonts)
+- Font Source: http://fonts.gstatic.com/s/stixtwotext/v11/YA9Er02F12Xkf5whdwKf11l0p7uWhf8lJUzXZT2omizcURVuMkWDmSo.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
