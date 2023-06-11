@@ -1,110 +1,449 @@
 - name: Home
   columns:
     - categories:
-        - name: First
+        - name: Search
           rows:
             - !Link
-              ico: <i class="fa-solid fa-house"></i>
-              lbl: Object 1
-              url: http://example.com/object1
+              ico: <i class="fa-solid fa-robot"></i>
+              lbl: ChatGPT
+              url: https://chat.openai.com/
             - !Link
-              ico: <i class="fa-solid fa-house"></i>
-              lbl: Object 1
-              url: http://example.com/object1
+              ico: <i class="fa-solid fa-magnifying-glass"></i>
+              lbl: DuckDuckGo
+              url: https://duckduckgo.com/
             - !Link
-              ico: <i class="fa-solid fa-house"></i>
-              lbl: Object 1
-              url: http://example.com/object1
+              ico: <i class="fa-solid fa-magnifying-glass"></i>
+              lbl: Google Search
+              url: https://www.google.com/
+        - name: Tools
+          rows:
+            - !Link
+              ico: <i class="fa-solid fa-envelope"></i>
+              lbl: Mail
+              url: https://gmail.com
+            - !Link
+              ico: <i class="fa-solid fa-envelope"></i>
+              lbl: ProtonMail
+              url: https://proton.me/
+            - !Link
+              ico: <i class="fa-solid fa-calendar-days"></i>
+              lbl: Calendar
+              url: https://calendar.google.com/calendar/r/week
+            - !Link
+              ico: <i class="fa-solid fa-language"></i>
+              lbl: Translate
+              url: https://translate.google.com/
+            - !Link
+              ico: <i class="fa-solid fa-map-location-dot"></i>
+              lbl: Maps
+              url: https://www.google.com/maps
+            - !Link
+              ico: <i class="fa-brands fa-google-drive"></i>
+              lbl: Drive
+              url: https://drive.google.com/drive/u/0/my-drive
             - !Separator
             - !Link
-              ico: <i class="fa-solid fa-house"></i>
-              lbl: Object 1
-              url: http://example.com/object1
-        - name: Second
-          rows:
+              ico: <i class="fa-solid fa-sun"></i>
+              lbl: Weather
+              url: https://wttr.in/
             - !Link
-              ico: <i class="fa-solid fa-house"></i>
-              lbl: Object 1
-              url: http://example.com/object1
+              ico: <i class="fa-solid fa-person-hiking"></i>
+              lbl: AllTrails
+              url: https://www.alltrails.com/
+            - !Link
+              ico: <i class="fa-solid fa-person-hiking"></i>
+              lbl: Outdoor Active
+              url: https://www.outdooractive.com/en/
     - categories:
-        - name: Third
+        - name: Expository
           rows:
             - !Link
-              ico: <i class="fa-solid fa-house"></i>
-              lbl: Object 1
-              url: http://example.com/object1
+              ico: <i class="fa-brands fa-wikipedia-w"></i>
+              lbl: Wikipedia
+              url: https://en.wikipedia.org/wiki/Main_Page
             - !Link
-              ico: <i class="fa-solid fa-house"></i>
-              lbl: Object 1
-              url: http://example.com/object1
+              ico: <i class="fa-brands fa-quora"></i>
+              lbl: Quora
+              url: https://www.quora.com
             - !Link
-              ico: <i class="fa-solid fa-house"></i>
-              lbl: Object 1
-              url: http://example.com/object1
+              ico: <i class="fa-brands fa-stack-exchange"></i>
+              lbl: Stack Exchange
+              url: https://stackexchange.com/
+        - name: News
+          rows:
+            - !Link
+              ico: <i class="fa-solid fa-newspaper"></i>
+              lbl: The New York Times
+              url: https://www.nytimes.com/
+            - !Link
+              ico: <i class="fa-solid fa-newspaper"></i>
+              lbl: NBC News
+              url: https://www.nbcnews.com/
+            - !Link
+              ico: <i class="fa-solid fa-newspaper"></i>
+              lbl: NPR
+              url: https://www.npr.org/
+            - !Link
+              ico: <i class="fa-solid fa-newspaper"></i>
+              lbl: Bloomberg
+              url: https://www.bloomberg.com
             - !Separator
             - !Link
-              ico: <i class="fa-solid fa-house"></i>
-              lbl: Object 1
-              url: http://example.com/object1
+              ico: <i class="fa-solid fa-newspaper"></i>
+              lbl: Deutsche Welle
+              url: https://www.dw.com
+            - !Link
+              ico: <i class="fa-solid fa-newspaper"></i>
+              lbl: France24
+              url: https://www.france24.com
+            - !Link
+              ico: <i class="fa-solid fa-newspaper"></i>
+              lbl: BBC
+              url: https://www.bbc.com/
+            - !Link
+              ico: <i class="fa-solid fa-newspaper"></i>
+              lbl: CNN
+              url: https://edition.cnn.com/
+            - !Link
+              ico: <i class="fa-solid fa-newspaper"></i>
+              lbl: CGTN
+              url: https://www.cgtn.com/
     - categories:
-        - name: Fourth
+        - name: Aggregators
           rows:
             - !Link
-              ico: <i class="fa-solid fa-house"></i>
-              lbl: Object 1
-              url: http://example.com/object1
+              ico: <i class="fa-brands fa-hacker-news"></i>
+              lbl: Hacker News
+              url: https://news.ycombinator.com/
             - !Link
-              ico: <i class="fa-solid fa-house"></i>
-              lbl: Object 1
-              url: http://example.com/object1
+              ico: <i class="fa-brands fa-reddit-alien"></i>
+              lbl: Reddit
+              url: https://www.reddit.com/
+        - name: Music
+          rows:
             - !Link
-              ico: <i class="fa-solid fa-house"></i>
-              lbl: Object 1
-              url: http://example.com/object1
-            - !Separator
+              ico: <i class="fa-brands fa-spotify"></i>
+              lbl: Spotify
+              url: https://open.spotify.com/?
             - !Link
-              ico: <i class="fa-solid fa-house"></i>
-              lbl: Object 1
-              url: http://example.com/object1
+              ico: <i class="fa-brands fa-mixcloud"></i>
+              lbl: Mixcloud
+              url: https://www.mixcloud.com/
+            - !Link
+              ico: <i class="fa-brands fa-soundcloud"></i>
+              lbl: Soundcloud
+              url: https://soundcloud.com/
+        - name: Reading
+          rows:
+            - !Link
+              ico: <i class="fa-brands fa-medium"></i>
+              lbl: Medium
+              url: https://medium.com/
+            - !Link
+              ico: <i class="fa-brands fa-goodreads-g"></i>
+              lbl: Goodreads
+              url: https://www.goodreads.com/
     - categories:
-        - name: Fifth
+        - name: Social
           rows:
             - !Link
-              ico: <i class="fa-solid fa-house"></i>
-              lbl: Object 1
-              url: http://example.com/object1
+              ico: <i class="fa-brands fa-mastodon"></i>
+              lbl: Mastodon
+              url: https://joinmastodon.org/
             - !Link
-              ico: <i class="fa-solid fa-house"></i>
-              lbl: Object 1
-              url: http://example.com/object1
+              ico: <i class="fa-brands fa-twitter"></i>
+              lbl: Twitter
+              url: https://twitter.com/
             - !Link
-              ico: <i class="fa-solid fa-house"></i>
-              lbl: Object 1
-              url: http://example.com/object1
-            - !Separator
+              ico: <i class="fa-brands fa-linkedin"></i>
+              lbl: Linkedin
+              url: https://www.linkedin.com
             - !Link
-              ico: <i class="fa-solid fa-house"></i>
-              lbl: Object 1
-              url: http://example.com/object1
-- name: Work
+              ico: <i class="fa-brands fa-facebook"></i>
+              lbl: Facebook
+              url: https://www.facebook.com/
+        - name: Media
+          rows:
+            - !Link
+              ico: <i class="fa-brands fa-youtube"></i>
+              lbl: YouTube
+              url: https://www.youtube.com/
+            - !Link
+              ico: <i class="fa-brands fa-twitch"></i>
+              lbl: Twitch
+              url: https://www.twitch.tv/
+            - !Link
+              ico: <i class="fa-brands fa-tiktok"></i>
+              lbl: TikTok
+              url: https://www.tiktok.com/
+            - !Link
+              ico: <i class="fa-brands fa-instagram"></i>
+              lbl: Instagram
+              url: https://www.instagram.com/
+        - name: Gaming
+          rows:
+            - !Link
+              ico: <i class="fa-brands fa-steam"></i>
+              lbl: Steam
+              url: https://store.steampowered.com/
+            - !Link
+              ico: <i class="fa-solid fa-key"></i>
+              lbl: Key For Steam
+              url: https://www.keyforsteam.de/
+            - !Link
+              ico: <i class="fa-solid fa-gamepad"></i>
+              lbl: Humble Bundle
+              url: https://www.humblebundle.com/
+            - !Link
+              ico: <i class="fa-solid fa-gamepad"></i>
+              lbl: Good Old Games
+              url: https://www.gog.com/
+            - !Link
+              ico: <i class="fa-solid fa-gamepad"></i>
+              lbl: RAWG
+              url: https://rawg.io/
+- name: Development
   columns:
     - categories:
-        - name: First
+        - name: Repos
           rows:
             - !Link
-              ico: <i class="fa-solid fa-house"></i>
-              lbl: Object 1
-              url: http://example.com/object1
+              ico: <i class="fab fa-github"></i>
+              lbl: Github
+              url: https://github.com/
             - !Link
-              ico: <i class="fa-solid fa-house"></i>
-              lbl: Object 1
-              url: http://example.com/object1
+              ico: <i class="fab fa-bitbucket"></i>
+              lbl: Bitbucket
+              url: https://bitbucket.org/
             - !Link
-              ico: <i class="fa-solid fa-house"></i>
-              lbl: Object 1
-              url: http://example.com/object1
+              ico: <i class="fab fa-gitlab"></i>
+              lbl: GitLab
+              url: https://gitlab.com/
+            - !Link
+              ico: <i class="fas fa-industry"></i>
+              lbl: NPM JS
+              url: https://www.npmjs.com/
+        - name: Tools
+          rows:
+            - !Link
+              ico: <i class="fas fa-apple-whole"></i>
+              lbl: Pomodoro
+              url: https://pomofocus.io/
+            - !Link
+              ico: <i class="fas fa-wrench"></i>
+              lbl: URL Encoder/Decoder
+              url: https://meyerweb.com/eric/tools/dencoder/
+            - !Link
+              ico: <i class="fas fa-edit"></i>
+              lbl: JS Beautifier
+              url: http://jsbeautifier.org
+            - !Link
+              ico: <i class="fas fa-edit"></i>
+              lbl: XML Formatter
+              url: http://www.webtoolkitonline.com/xml-formatter.html
+        - name: Generators
+          rows:
+            - !Link
+              ico: <i class="fas fa-eyedropper"></i>
+              lbl: Color Generator
+              url: https://fffuel.co/pppalette/
+            - !Link
+              ico: <i class="fas fa-swatchbook"></i>
+              lbl: hue.tools
+              url: https://hue.tools/modify
+            - !Link
+              ico: <i class="fas fa-wrench"></i>
+              lbl: UUID Generator
+              url: https://www.uuidgenerator.net/
+            - !Link
+              ico: <i class="fas fa-money-check-alt"></i>
+              lbl: IBAN Generator
+              url: http://randomiban.com/?country=Germany
+        - name: Editors
+          rows:
+            - !Link
+              ico: <i class="fas fa-edit"></i>
+              lbl: Code Sandbox
+              url: https://codesandbox.io/
+            - !Link
+              ico: <i class="fas fa-edit"></i>
+              lbl: Regex Editor
+              url: https://regexr.com/
+            - !Link
+              ico: <i class="fas fa-edit"></i>
+              lbl: Swagger Editor
+              url: https://editor.swagger.io/
+            - !Link
+              ico: <i class="fas fa-edit"></i>
+              lbl: AST Editor
+              url: https://astexplorer.net/
+            - !Link
+              ico: <i class="fas fa-edit"></i>
+              lbl: PlantUML Editor
+              url: https://plantuml-editor.kkeisuke.com/
+    - categories:
+        - name: Linux
+          rows:
+            - !Link
+              ico: <i class="fab fa-linux"></i>
+              lbl: Arch Wiki
+              url: https://wiki.archlinux.org/
+            - !Link
+              ico: <i class="fas fa-th-large"></i>
+              lbl: i3 User guide
+              url: https://i3wm.org/docs/userguide.html
+            - !Link
+              ico: <i class="fas fa-th-large"></i>
+              lbl: i3 Blocks
+              url: https://vivien.github.io/i3blocks/
+            - !Link
+              ico: <i class="fas fa-snowflake"></i>
+              lbl: NixOS Search
+              url: https://search.nixos.org/packages
+            - !Link
+              ico: <i class="fas fa-snowflake"></i>
+              lbl: NixOS Wiki
+              url: https://nixos.wiki/wiki/Main_Page
+            - !Link
+              ico: <i class="fas fa-snowflake"></i>
+              lbl: Home Manager Search
+              url: https://mipmip.github.io/home-manager-option-search/
+    - categories:
+        - name: Frameworks
+          rows:
+            - !Link
+              ico: <i class="fas fa-book"></i>
+              lbl: Material UI
+              url: https://material-ui.com/components/grid/
+            - !Link
+              ico: <i class="fas fa-book"></i>
+              lbl: Typescript
+              url: https://www.typescriptlang.org/docs/handbook/2/everyday-types.html
+            - !Link
+              ico: <i class="fas fa-book"></i>
+              lbl: Storybook
+              url: https://storybook.js.org/docs/react/get-started/introduction
+            - !Link
+              ico: <i class="fas fa-book"></i>
+              lbl: Playwright
+              url: https://www.typescriptlang.org/docs/handbook/2/everyday-types.html
+            - !Link
+              ico: <i class="fas fa-book"></i>
+              lbl: Jest
+              url: https://jestjs.io/docs/en/getting-started
+        - name: React
+          rows:
+            - !Link
+              ico: <i class="fas fa-book"></i>
+              lbl: React
+              url: https://reactjs.org/docs/getting-started.html
+            - !Link
+              ico: <i class="fas fa-book"></i>
+              lbl: Create React App
+              url: https://create-react-app.dev/
+            - !Link
+              ico: <i class="fas fa-book"></i>
+              lbl: React Hook Form
+              url: https://react-hook-form.com/get-started/#Quickstart
+            - !Link
+              ico: <i class="fas fa-book"></i>
+              lbl: React Testing Library
+              url: https://testing-library.com/docs/react-testing-library/cheatsheet
+            - !Link
+              ico: <i class="fas fa-book"></i>
+              lbl: React Testing Library - user-events
+              url: https://github.com/testing-library/user-event
+            - !Link
+              ico: <i class="fas fa-book"></i>
+              lbl: React Query
+              url: https://react-query.tanstack.com/quick-start
+            - !Link
+              ico: <i class="fas fa-book"></i>
+              lbl: React Router DOM
+              url: https://reactrouterdotcom.fly.dev/docs/en/v6/getting-started/overview
+            - !Link
+              ico: <i class="fas fa-book"></i>
+              lbl: React I18next
+              url: https://react.i18next.com/
+    - categories:
+        - name: Libs
+          rows:
+            - !Link
+              ico: <i class="fas fa-book"></i>
+              lbl: Zod
+              url: https://zod.dev/
+            - !Link
+              ico: <i class="fas fa-book"></i>
+              lbl: I18next
+              url: https://www.i18next.com/overview/configuration-options
+            - !Link
+              ico: <i class="fas fa-book"></i>
+              lbl: Jest-dom
+              url: https://github.com/testing-library/jest-dom
+            - !Link
+              ico: <i class="fas fa-book"></i>
+              lbl: ts-jest
+              url: https://kulshekhar.github.io/ts-jest/user/test-helpers
+            - !Link
+              ico: <i class="fas fa-book"></i>
+              lbl: date-fns
+              url: https://date-fns.org/v2.22.1/docs/Getting-Started
+            - !Link
+              ico: <i class="fas fa-book"></i>
+              lbl: dayjs
+              url: https://day.js.org/docs/en/installation/installation
+            - !Link
+              ico: <i class="fas fa-book"></i>
+              lbl: Material UI pickers
+              url: https://material-ui-pickers.dev/demo/datepicker
+            - !Link
+              ico: <i class="fas fa-book"></i>
+              lbl: Zustand
+              url: https://github.com/pmndrs/zustand
+            - !Link
+              ico: <i class="fas fa-book"></i>
+              lbl: Openapi TS Codegen
+              url: https://github.com/ferdikoomen/openapi-typescript-codegen
+    - categories:
+        - name: Practice
+          rows:
+            - !Link
+              ico: <i class="fas fa-keyboard"></i>
+              lbl: TypeLit.io
+              url: https://www.typelit.io
+            - !Link
+              ico: <i class="fab fa-hackerrank"></i>
+              lbl: Hackerrank
+              url: https://www.hackerrank.com/dashboard
+        - name: Docs
+          rows:
+            - !Link
+              ico: <i class="fas fa-question"></i>
+              lbl: Flexbox cheatsheet
+              url: https://flexboxsheet.com/
+            - !Link
+              ico: <i class="fas fa-question"></i>
+              lbl: Grid cheatsheet
+              url: https://grid.malven.co/
             - !Separator
             - !Link
-              ico: <i class="fa-solid fa-house"></i>
-              lbl: Object 1
-              url: http://example.com/object1
+              ico: <i class="fas fa-wand-magic-sparkles"></i>
+              lbl: Can I use
+              url: https://caniuse.com/
+            - !Link
+              ico: <i class="fas fa-code"></i>
+              lbl: DevDocs
+              url: https://devdocs.io/
+            - !Separator
+            - !Link
+              ico: <i class="fas fa-book"></i>
+              lbl: Docker
+              url: https://docs.docker.com/reference/
+            - !Link
+              ico: <i class="fas fa-book"></i>
+              lbl: Jenkinspipeline
+              url: https://www.jenkins.io/doc/book/pipeline/syntax/
+            - !Link
+              ico: <i class="fas fa-book"></i>
+              lbl: PlantUML
+              url: https://plantuml.com/
