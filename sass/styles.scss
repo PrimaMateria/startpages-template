@@ -1,4 +1,79 @@
-@import "colorschemes/base16-gruvbox-dark-medium.scss";
+// @import "colorschemes/base16-3024.scss";
+// @import "colorschemes/base16-apathy.scss";
+// @import "colorschemes/base16-ashes.scss";
+// @import "colorschemes/base16-atelier-cave.scss";
+// @import "colorschemes/base16-atelier-dune.scss";
+// @import "colorschemes/base16-atelier-estuary.scss";
+// @import "colorschemes/base16-atelier-forest.scss";
+// @import "colorschemes/base16-atelier-heath.scss";
+// @import "colorschemes/base16-atelier-lakeside.scss";
+// @import "colorschemes/base16-atelier-plateau.scss";
+// @import "colorschemes/base16-atelier-savanna.scss";
+// @import "colorschemes/base16-atelier-seaside.scss";
+// @import "colorschemes/base16-atelier-sulphurpool.scss";
+// @import "colorschemes/base16-bespin.scss";
+// @import "colorschemes/base16-brewer.scss";
+// @import "colorschemes/base16-bright.scss";
+// @import "colorschemes/base16-chalk.scss";
+// @import "colorschemes/base16-codeschool.scss";
+// @import "colorschemes/base16-cupcake.scss";
+// @import "colorschemes/base16-darktooth.scss";
+// @import "colorschemes/base16-default-dark.scss";
+@import "colorschemes/base16-default-light.scss";
+// @import "colorschemes/base16-dracula.scss";
+// @import "colorschemes/base16-eighties.scss";
+// @import "colorschemes/base16-embers.scss";
+// @import "colorschemes/base16-flat.scss";
+// @import "colorschemes/base16-github.scss";
+// @import "colorschemes/base16-google-dark.scss";
+// @import "colorschemes/base16-google-light.scss";
+// @import "colorschemes/base16-grayscale-dark.scss";
+// @import "colorschemes/base16-grayscale-light.scss";
+// @import "colorschemes/base16-green-screen.scss";
+// @import "colorschemes/base16-gruvbox-dark-hard.scss";
+// @import "colorschemes/base16-gruvbox-dark-medium.scss";
+// @import "colorschemes/base16-gruvbox-dark-pale.scss";
+// @import "colorschemes/base16-gruvbox-dark-soft.scss";
+// @import "colorschemes/base16-gruvbox-light-hard.scss";
+// @import "colorschemes/base16-gruvbox-light-medium.scss";
+// @import "colorschemes/base16-gruvbox-light-soft.scss";
+// @import "colorschemes/base16-harmonic16-dark.scss";
+// @import "colorschemes/base16-harmonic16-light.scss";
+// @import "colorschemes/base16-hopscotch.scss";
+// @import "colorschemes/base16-ir-black.scss";
+// @import "colorschemes/base16-isotope.scss";
+// @import "colorschemes/base16-london-tube.scss";
+// @import "colorschemes/base16-macintosh.scss";
+// @import "colorschemes/base16-marrakesh.scss";
+// @import "colorschemes/base16-materia.scss";
+// @import "colorschemes/base16-mexico-light.scss";
+// @import "colorschemes/base16-mocha.scss";
+// @import "colorschemes/base16-monokai.scss";
+// @import "colorschemes/base16-nord.scss";
+// @import "colorschemes/base16-ocean.scss";
+// @import "colorschemes/base16-oceanicnext.scss";
+// @import "colorschemes/base16-onedark.scss";
+// @import "colorschemes/base16-paraiso.scss";
+// @import "colorschemes/base16-phd.scss";
+// @import "colorschemes/base16-pico.scss";
+// @import "colorschemes/base16-pop.scss";
+// @import "colorschemes/base16-railscasts.scss";
+// @import "colorschemes/base16-rebecca.scss";
+// @import "colorschemes/base16-seti-ui.scss";
+// @import "colorschemes/base16-shapeshifter.scss";
+// @import "colorschemes/base16-solar-flare.scss";
+// @import "colorschemes/base16-solarized-dark.scss";
+// @import "colorschemes/base16-solarized-light.scss";
+// @import "colorschemes/base16-spacemacs.scss";
+// @import "colorschemes/base16-summerfruit-dark.scss";
+// @import "colorschemes/base16-summerfruit-light.scss";
+// @import "colorschemes/base16-tomorrow-night.scss";
+// @import "colorschemes/base16-tomorrow.scss";
+// @import "colorschemes/base16-twilight.scss";
+// @import "colorschemes/base16-unikitty-dark.scss";
+// @import "colorschemes/base16-unikitty-light.scss";
+// @import "colorschemes/base16-woodland.scss";
+
 @import "https://fonts.googleapis.com/css2?family=Roboto";
 
 html,
@@ -14,7 +89,7 @@ a {
 }
 
 h2 {
-  color: $base0A;
+  color: $base0D;
 }
 
 .page {
