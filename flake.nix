@@ -1,16 +1,17 @@
 {
   description = "GitHub Simple Startpage Generator";
-  inputs = { 
+  inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs";
     flake-utils.url = "github:numtide/flake-utils";
   };
-  outputs = inputs@{ self, ... }: 
+  outputs = inputs@{ self, ... }:
     inputs.flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = import inputs.nixpkgs {
           inherit system;
         };
-      in {
+      in
+      {
         devShells = rec {
           rust = pkgs.mkShell {
             buildInputs = [
