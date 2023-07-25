@@ -41,7 +41,7 @@ struct Startpage {
 //  <name, filename>
 type Navigation = HashMap<String, String>;
 
-static OUT_DIR: &str = "docs";
+static OUT_DIR: &str = "_site";
 static CONFIGURATION: &str = "content/startpages.yaml";
 
 lazy_static! {
@@ -108,7 +108,7 @@ fn generate_startpages(
 
         let html_code = TEMPLATES.render("startpage.html", &context)?;
 
-        // Write generated html code to the file in the docs directory
+        // Write generated html code to the file in the _site directory
         let startpage_file_name = navigation
             .get(&startpage.name)
             .ok_or("Navigation doesn't contain startpage name")?;
@@ -122,7 +122,7 @@ fn generate_startpages(
     Ok(())
 }
 
-/// Compiles sass/styles.scss to docs/css/styles.css
+/// Compiles sass/styles.scss to _site/css/styles.css
 fn compile_sass() -> Result<(), Box<dyn std::error::Error>> {
     let css_dir = format!("{}/css", OUT_DIR);
     fs::create_dir(&css_dir)?;
@@ -141,7 +141,7 @@ fn compile_sass() -> Result<(), Box<dyn std::error::Error>> {
     Ok(())
 }
 
-/// Copies public dir to docs/public
+/// Copies public dir to _site/public
 fn copy_public_dir() -> Result<(), Box<dyn std::error::Error>> {
     let options = CopyOptions::new();
     copy("public", OUT_DIR, &options)?;

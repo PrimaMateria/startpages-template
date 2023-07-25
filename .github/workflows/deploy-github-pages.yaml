@@ -1,0 +1,18 @@
+name: deploy-github-pages
+on:
+  push:
+    branches:
+      - main
+jobs:
+  generate:
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Build static files
+        uses: actions-rs/cargo@v1
+        with:
+          command: run
+      - name: Upload static files as an artifact
+        uses: actions/upload-pages-artifact@v2
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v2
