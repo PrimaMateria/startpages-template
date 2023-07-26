@@ -30,9 +30,9 @@ schema:
 
 ![Content hierarchy](_docs/content-schema.svg)
 
-By default the icons come from [Font
-Awesome](https://fontawesome.com/search?o=r&m=free) and for easier copy-paste
-it uses the whole snippet in the format:
+By default, the icons come from [Font
+Awesome](https://fontawesome.com/search?o=r&m=free&f=brands) and for easier
+copy-paste it uses the whole snippet in the format:
 
 ```
 <i class="fa-solid fa-magnifying-glass"></i>
@@ -50,7 +50,7 @@ colorschemes were taken from
 
 ## Changing startpage template
 
-Startpage template is in `templates/startpage.html` and it will be processed by
+Startpage template is in `templates/startpage.html`, and it will be processed by
 [Tera](https://tera.netlify.app/) template engine.
 
 ## Public directory
@@ -63,7 +63,7 @@ modified startpage template.
 
 Install [Rust and Cargo](https://www.rust-lang.org/tools/install).
 
-Then you can run the generator in watch mode, so everytime you update a file
+Then you can run the generator in watch mode, so every time you update a file
 the generator will regenerate the `_site/`.
 
 ```
