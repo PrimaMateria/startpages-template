@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="177px" preserveAspectRatio="none" style="width:799px;height:177px;background:#FFFFFF;" version="1.1" viewBox="0 0 799 177" width="799px" zoomAndPan="magnify"><defs/><g><!--MD5=[71d070272be272213035c5007f59ff40]
+cluster Row--><g id="cluster_Row"><rect fill="none" height="164" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.5;" width="261" x="532" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="34" x="645.5" y="21.9951">Row</text></g><!--MD5=[d189332174d53557e6def82bbd003869]
+class Link--><g id="elem_Link"><rect codeLine="22" fill="#F1F1F1" height="96.8906" id="Link" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="59" x="709.5" y="50"/><ellipse cx="724.5" cy="66" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M728.6094,72 L720.8906,72 L720.8906,59.6094 L728.6094,59.6094 L728.6094,61.7656 L723.3438,61.7656 L723.3438,64.4375 L728.1094,64.4375 L728.1094,66.5938 L723.3438,66.5938 L723.3438,69.8438 L728.6094,69.8438 L728.6094,72 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="27" x="738.5" y="70.8467">Link</text><line style="stroke:#181818;stroke-width:0.5;" x1="710.5" x2="767.5" y1="82" y2="82"/><ellipse cx="720.5" cy="95.6484" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="20" x="729.5" y="98.9951">ico</text><ellipse cx="720.5" cy="111.9453" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="15" x="729.5" y="115.292">lbl</text><ellipse cx="720.5" cy="128.2422" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="17" x="729.5" y="131.5889">url</text><line style="stroke:#181818;stroke-width:0.5;" x1="710.5" x2="767.5" y1="138.8906" y2="138.8906"/></g><!--MD5=[eb634abde6910e71bf3372c9cea1ac56]
+class Separator--><g id="elem_Separator"><rect codeLine="28" fill="#F1F1F1" height="48" id="Separator" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="99" x="575.5" y="74.5"/><ellipse cx="590.5" cy="90.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M594.6094,96.5 L586.8906,96.5 L586.8906,84.1094 L594.6094,84.1094 L594.6094,86.2656 L589.3438,86.2656 L589.3438,88.9375 L594.1094,88.9375 L594.1094,91.0938 L589.3438,91.0938 L589.3438,94.3438 L594.6094,94.3438 L594.6094,96.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="67" x="604.5" y="95.3467">Separator</text><line style="stroke:#181818;stroke-width:0.5;" x1="576.5" x2="673.5" y1="106.5" y2="106.5"/><line style="stroke:#181818;stroke-width:0.5;" x1="576.5" x2="673.5" y1="114.5" y2="114.5"/></g><!--MD5=[fd7366e9f96236d9aa60dcc04f2b83e5]
+class Content--><g id="elem_Content"><rect codeLine="3" fill="#F1F1F1" height="64.2969" id="Content" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="100" x="7" y="66.5"/><ellipse cx="27.4" cy="82.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M31.5094,88.5 L23.7906,88.5 L23.7906,76.1094 L31.5094,76.1094 L31.5094,78.2656 L26.2438,78.2656 L26.2438,80.9375 L31.0094,80.9375 L31.0094,83.0938 L26.2438,83.0938 L26.2438,86.3438 L31.5094,86.3438 L31.5094,88.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="42.6" y="87.3467">Content</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="106" y1="98.5" y2="98.5"/><ellipse cx="18" cy="112.1484" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="74" x="27" y="115.4951">startpages</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="106" y1="122.7969" y2="122.7969"/></g><!--MD5=[f91791fed5b7c9043ec6145eb1cfce5a]
+class Startpage--><g id="elem_Startpage"><rect codeLine="7" fill="#F1F1F1" height="80.5938" id="Startpage" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="99" x="142.5" y="58"/><ellipse cx="157.5" cy="74" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M161.6094,80 L153.8906,80 L153.8906,67.6094 L161.6094,67.6094 L161.6094,69.7656 L156.3438,69.7656 L156.3438,72.4375 L161.1094,72.4375 L161.1094,74.5938 L156.3438,74.5938 L156.3438,77.8438 L161.6094,77.8438 L161.6094,80 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="67" x="171.5" y="78.8467">Startpage</text><line style="stroke:#181818;stroke-width:0.5;" x1="143.5" x2="240.5" y1="90" y2="90"/><ellipse cx="153.5" cy="103.6484" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="39" x="162.5" y="106.9951">name</text><ellipse cx="153.5" cy="119.9453" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="59" x="162.5" y="123.292">columns</text><line style="stroke:#181818;stroke-width:0.5;" x1="143.5" x2="240.5" y1="130.5938" y2="130.5938"/></g><!--MD5=[e06ef809dd6be8ce79b58fe0a1161eb8]
+class Column--><g id="elem_Column"><rect codeLine="12" fill="#F1F1F1" height="64.2969" id="Column" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="99" x="276.5" y="66.5"/><ellipse cx="297.8" cy="82.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M301.9094,88.5 L294.1906,88.5 L294.1906,76.1094 L301.9094,76.1094 L301.9094,78.2656 L296.6438,78.2656 L296.6438,80.9375 L301.4094,80.9375 L301.4094,83.0938 L296.6438,83.0938 L296.6438,86.3438 L301.9094,86.3438 L301.9094,88.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="313.2" y="87.3467">Column</text><line style="stroke:#181818;stroke-width:0.5;" x1="277.5" x2="374.5" y1="98.5" y2="98.5"/><ellipse cx="287.5" cy="112.1484" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="296.5" y="115.4951">categories</text><line style="stroke:#181818;stroke-width:0.5;" x1="277.5" x2="374.5" y1="122.7969" y2="122.7969"/></g><!--MD5=[a96594a83e2ecdc78cbf17c2ddf01934]
+class Category--><g id="elem_Category"><rect codeLine="16" fill="#F1F1F1" height="80.5938" id="Category" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="94" x="411" y="58"/><ellipse cx="426" cy="74" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M430.1094,80 L422.3906,80 L422.3906,67.6094 L430.1094,67.6094 L430.1094,69.7656 L424.8438,69.7656 L424.8438,72.4375 L429.6094,72.4375 L429.6094,74.5938 L424.8438,74.5938 L424.8438,77.8438 L430.1094,77.8438 L430.1094,80 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="440" y="78.8467">Category</text><line style="stroke:#181818;stroke-width:0.5;" x1="412" x2="504" y1="90" y2="90"/><ellipse cx="422" cy="103.6484" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="39" x="431" y="106.9951">name</text><ellipse cx="422" cy="119.9453" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="33" x="431" y="123.292">rows</text><line style="stroke:#181818;stroke-width:0.5;" x1="412" x2="504" y1="130.5938" y2="130.5938"/></g><!--MD5=[150fcd7b038bd8f4a77aa9bf237255b0]
+link Content to Startpage--><g id="link_Content_Startpage"><path codeLine="31" d="M107.1,98.5 C116.07,98.5 125.04,98.5 134.01,98.5 " fill="none" id="Content-to-Startpage" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="134.25" x2="142.25" y1="98.5" y2="90.5"/><line style="stroke:#181818;stroke-width:1.0;" x1="134.25" x2="142.25" y1="98.5" y2="106.5"/><line style="stroke:#181818;stroke-width:1.0;" x1="134.25" x2="142.25" y1="98.5" y2="98.5"/></g><!--MD5=[13523d7a27cfcaa27d1b38f33140b188]
+link Startpage to Column--><g id="link_Startpage_Column"><path codeLine="32" d="M241.73,98.5 C250.55,98.5 259.37,98.5 268.19,98.5 " fill="none" id="Startpage-to-Column" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="268.29" x2="276.29" y1="98.5" y2="90.5"/><line style="stroke:#181818;stroke-width:1.0;" x1="268.29" x2="276.29" y1="98.5" y2="106.5"/><line style="stroke:#181818;stroke-width:1.0;" x1="268.29" x2="276.29" y1="98.5" y2="98.5"/></g><!--MD5=[b521273fb02512afc39fc6cca28f6eb3]
+link Column to Category--><g id="link_Column_Category"><path codeLine="33" d="M375.76,98.5 C384.69,98.5 393.63,98.5 402.57,98.5 " fill="none" id="Column-to-Category" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="402.77" x2="410.77" y1="98.4857" y2="90.5"/><line style="stroke:#181818;stroke-width:1.0;" x1="402.77" x2="410.77" y1="98.4857" y2="106.5"/><line style="stroke:#181818;stroke-width:1.0;" x1="402.77" x2="410.77" y1="98.4857" y2="98.5"/></g><!--MD5=[1d2a96202620ab1a7116833dc6f555a2]
+link Category to Row--><g id="link_Category_Row"><path codeLine="34" d="M505.09,98.5 C510.815,98.5 516.5425,98.5 522.27,98.5 C525.1338,98.5 527.9975,98.5 530.8609,98.5 C531.2189,98.5 531.5768,98.5 531.9347,98.5 " fill="none" id="Category-to-Row" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="523.9347" x2="531.9347" y1="98.5" y2="90.5"/><line style="stroke:#181818;stroke-width:1.0;" x1="523.9347" x2="531.9347" y1="98.5" y2="106.5"/><line style="stroke:#181818;stroke-width:1.0;" x1="523.9347" x2="531.9347" y1="98.5" y2="98.5"/></g><!--MD5=[37bff911e3cda0112e4492e0523feed8]
+@startuml
+skinparam packageStyle rectangle
+
+entity Content {
+  * startpages
+}
+
+entity Startpage {
+  * name
+  * columns
+}
+
+entity Column {
+  * categories
+}
+
+entity Category {
+  * name
+  * rows
+}
+
+package Row {
+  entity Link {
+    * ico
+    * lbl
+    * url
+  }
+
+  entity Separator {}
+}
+
+Content -{ Startpage
+Startpage -{ Column
+Column -{ Category
+Category -{ Row
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 17:01:30 UTC 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

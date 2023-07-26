@@ -1,0 +1,37 @@
+@startuml
+skinparam packageStyle rectangle
+
+entity Content {
+  * startpages
+}
+
+entity Startpage {
+  * name
+  * columns
+}
+
+entity Column {
+  * categories
+}
+
+entity Category {
+  * name
+  * rows
+}
+
+package Row {
+  entity Link {
+    * ico
+    * lbl
+    * url
+  }
+
+  entity Separator {}
+}
+
+Content -{ Startpage
+Startpage -{ Column
+Column -{ Category
+Category -{ Row
+
+@enduml
