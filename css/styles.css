@@ -1,0 +1,46 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto";
+/* Default Light by Chris Kempson (http://chriskempson.com) */
+html, body {
+  font-family: "Roboto";
+  background-color: #f8f8f8;
+  color: #585858;
+}
+
+a {
+  text-decoration: none;
+  color: #585858;
+}
+
+h2 {
+  color: #7cafc2;
+}
+
+.page {
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.category .rows {
+  display: grid;
+  grid-row-gap: 4px;
+  grid-template-columns: 30px auto;
+}
+.category .rows .separator {
+  border-top: 1px solid #d8d8d8;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  grid-column: 1/span 2;
+}
+
+.navigation {
+  position: fixed;
+  bottom: 0;
+  padding: 8px;
+  width: 100%;
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+}
