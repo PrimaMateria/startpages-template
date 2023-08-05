@@ -19,9 +19,13 @@ override the browser's new tab location setting.
 
 ## Setting up the repository
 
-First create your own repository from this template repository. You can use
+First, create your own repository from this template repository. You can use
 following
 [guide](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+
+Next, activate the GitHub Pages in the settings:
+
+![Deploy from branch / gh-pages / root](_docs/github-pages-settings.png)
 
 ## Defining the content
 
