@@ -92,13 +92,21 @@ h2 {
   color: $base0D;
 }
 
-.page {
+body {
   margin-top: 5%;
-  margin-left: 10%;
-  margin-right: 10%;
+}
 
-  display: flex;
-  justify-content: space-around;
+.page {
+  max-width: 1600px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
 }
 
 .category {
@@ -112,6 +120,7 @@ h2 {
       margin-top: 8px;
       margin-bottom: 8px;
       grid-column: 1 / span 2;
+      max-width: 150px;
     }
   }
 }
