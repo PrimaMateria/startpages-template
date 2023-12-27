@@ -71,9 +71,16 @@ Then you can run the generator in watch mode, so every time you update a file
 the generator will regenerate the `_site/`.
 
 ```
-cargo inatall cargo-watch
+cargo install cargo-watch
 cargo watch -x run
 ```
+
+## Merging changes in template
+
+Once the new repository is created from this template, it starts with a clean
+slate and does not include the history of the template. Therefore, Git will not
+allow a simple merge. You will need to use the `--allow-unrelated-histories`
+flag.
 
 ## Contributing
 
