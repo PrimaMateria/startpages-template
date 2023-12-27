@@ -71,6 +71,7 @@ Then you can run the generator in watch mode, so every time you update a file
 the generator will regenerate the `_site/`.
 
 ```
+cargo inatall cargo-watch
 cargo watch -x run
 ```
 
